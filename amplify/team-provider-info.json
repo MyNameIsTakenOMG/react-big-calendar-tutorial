@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-testapimethodlambda-dev-183155-authRole",
+      "UnauthRoleArn": "arn:aws:iam::550321497998:role/amplify-testapimethodlambda-dev-183155-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::550321497998:role/amplify-testapimethodlambda-dev-183155-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-testapimethodlambda-dev-183155-deployment",
+      "UnauthRoleName": "amplify-testapimethodlambda-dev-183155-unauthRole",
+      "StackName": "amplify-testapimethodlambda-dev-183155",
+      "StackId": "arn:aws:cloudformation:us-east-2:550321497998:stack/amplify-testapimethodlambda-dev-183155/01d0ac60-7e8f-11ee-8b8c-06024240d895",
+      "AmplifyAppId": "d3v1st6d48jniw"
+    },
+    "categories": {
+      "function": {
+        "testMethodLambda": {
+          "deploymentBucketName": "amplify-testapimethodlambda-dev-183155-deployment",
+          "s3Key": "amplify-builds/testMethodLambda-51544c6f6d2f4c594539-build.zip"
+        }
+      },
+      "api": {
+        "testApi": {}
+      }
+    }
+  }
+}
