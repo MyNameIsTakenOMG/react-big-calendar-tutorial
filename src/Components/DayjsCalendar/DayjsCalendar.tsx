@@ -143,6 +143,9 @@ export default function DayjsCalendar() {
         resourceAccessor={'resource'}
         components={{
           event: CustomEvent,
+          day: {
+            event: CustomDayEvent
+          }
         }}
       />
       <AppointmentModal
@@ -155,5 +158,15 @@ export default function DayjsCalendar() {
 
 const CustomEvent = (props: any) => {
   console.log('props: ', props);
-  return <div>this is custom event</div>;
+  return <div>{props.title}</div>;
 };
+
+const CustomDayEvent = (props: any) => {
+  return <div>
+    <p style={{ fontSize: '80%' }}>{props.title}</p>
+    <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
+      <p style={{ fontSize: '80%' }}>{props.event.resource.status}</p>
+      <p style={{ fontSize: '80%' }}>{props.event.resource.title}</p>
+    </div>
+  </div>
+}
